@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #804495;
+}
+body, html {
+    height: 100%; /* Faz com que o body e html ocupem 100% da altura da viewport */
+    margin: 0; /* Remove margens padrão */
+}
+
+.image-test {
+    display: flex; /* Ativa o modelo Flexbox */
+    height: 100vh; /* Faz com que o contêiner ocupe toda a altura da janela */
+}
+
+.image-test img {
+    width: 50%; /* Define a largura da imagem para 50% do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Cobre todo o espaço disponível mantendo a proporção */
+}
+
+.container {
+    width: 50%; /* Define a largura do contêiner de login para 50% do contêiner pai */
+    display: flex; /* Ativa o modelo Flexbox para centralizar verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+
+.btn-login {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    border-color: var(--primary-color);
+    transition: background-color 0.2s ease, border-color 0.2s ease; /* Suaviza a transição */
+}
+
+.btn-login:hover {
+    background-color: #724581;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6a367b;
+    text-decoration: underline;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
